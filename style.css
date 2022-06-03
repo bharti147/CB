@@ -7,12 +7,16 @@
 body{
     background-color: rgb(238, 240, 240);
     font-family: 'Rubik', sans-serif;
+    /* overflow-y: scroll; */
+}
+body::-webkit-scrollbar {
+  display: none;
 }
 
 .container{
     height:150vh;
     width:97vw;
-    margin: 20px 10px;
+    margin: 20px 20px;
     display: flex;
     justify-content: space-between;
     align-items:flex-start;
@@ -266,11 +270,12 @@ width: 140px;
 .box2{
    
     width:73%;
-    height:120%;
+    height:125%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+
 .lineGraph{
   width: 100%;
 
@@ -284,9 +289,8 @@ width: 140px;
 
 }
 
-
-
 /* .userSkills{
+
   display: flex;
     height:18%;
     width:100%;
@@ -489,6 +493,7 @@ color: white;
   #circleBar {
     height: 101px;
     width: 101px;
+    /* background-color: rgb(173, 178, 221); */
     }
   .barBox {
     width: 66%;
