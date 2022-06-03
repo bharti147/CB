@@ -193,36 +193,42 @@ document.getElementById('Badge4').style.opacity="1";
 document.getElementById('Badge5').style.opacity="1";
 }
 
-// var xyValues = [
-//   {x:2, y:7},
-//   {x:3, y:6},
-//   {x:4, y:4},
-  
-// ];
+var xValues = [0,10,20,30,40,50];
+var yValues = [2,3,1,2,5,4];
 
-// new Chart("myChart", {
-//   type: "scatter",
-//   data: {
-//     datasets: [{
-//       pointRadius: 4,
-//       pointBackgroundColor: "rgb(0,0,255)",
-//       borderColor: "blue",
-//       data: xyValues
-//     }]
-//   },
-//   options: {
-//     legend: {display: false},
-//     scales: {
-//       xAxes: [{ticks: {min: 1, max:5}}],
-//       yAxes: [{ticks: {min: 1, max:5}}],
-//     }
-//   }
-// });
+new Chart("myChart", {
+  type: "line",
+  data: {
+    labels: xValues,
+    datasets: [{
+      fill: true,
+      lineTension: 0,
+      backgroundColor: "rgb(173, 178, 221)",
+      borderColor: "rgb(173, 178, 221)",
+      data: yValues
+    
+    }]
+  },
+  options: {
+    legend: {display: false},
+    
+    scales: {
+
+      yAxes: [{ticks: {min: 0, max:6, fontSize: 20, fontStyle: '700',fontColor: '#000',
+     
+    }}],
+      xAxes: [{ticks: {fontSize: 20, fontStyle: '700',fontColor: '#000'}}]
+    }
+  }
+});
 
 const myChart=document.getElementById('myChart');
 console.log(myChart);
 
-
+// scales: {
+//     yAxes: [{ticks: {fontSize: 12, fontFamily: "'Roboto', sans-serif", fontColor: '#000', fontStyle: '500'}}],
+//     xAxes: [{ticks: {fontSize: 12, fontFamily: "'Roboto', sans-serif", fontColor: '#000', fontStyle: '500'}}]
+//     }
 
 
 
