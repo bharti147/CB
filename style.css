@@ -7,7 +7,7 @@
 body{
     background-color: rgb(238, 240, 240);
     font-family: 'Rubik', sans-serif;
-    /* overflow-y: scroll; */
+    overflow-y: scroll;
 }
 body::-webkit-scrollbar {
   display: none;
@@ -457,25 +457,34 @@ color: white;
 @media (max-width:720px){
    .container{
      flex-direction: column;
-    width:97vw;
-   padding:  .7rem 1.5rem;
+   padding:  0 1.5rem 0 0;
    }
 
    .box1{
      width: 100%;  
-     height:30%;
+     height:40%;
+     justify-content: space-evenly;
    }
   
   .profile{
     width: 100%;
-      height: 40%;
+      height: 28%;
   }
- 
+  .skills {
+    width: 100%;
+    height: 32%;
+  }
+  .skills>div:first-child {
+    height: 35%;
+  }
+  
+  
+  
   .tube{
     flex-direction: row;
     align-items: center;
       width: 100%;
-      height: 55%;
+      height: 30%;
   }
  .progressBox{
   width:30%;
@@ -502,7 +511,7 @@ color: white;
 
 .box2{
   width:100%;
-  height:69%;
+  height:70%;
 }
 
 .userSkills{
@@ -513,18 +522,15 @@ color: white;
 
 .badges{
   width: 100%;
-  height: 48%;
+  height: 18%;
 }
-.skills {
-  width: 100%;
-  height: 48%;
-}
-.skills>div:first-child {
-  height: 35%;
+.lineGraph{
+  height: 18%;
 }
 
+
 .recent{
-  height: 63%;
+  height: 60%;
   width: 100%; 
 }
 .ques{
@@ -539,17 +545,36 @@ color: white;
 }
 
 @media (max-width:450px){
- 
- 
+.conatiner{
+ padding: 0 .5rem 0 0;
+}
+  .box1{
+    height: 40%;
+  }
+  .profile{
+    height: 26%;
+  }
  .p{
   width: 90%;
 }
+.skills {
+  width: 100%;
+  height: 30%;
+  font-size: smaller;
+ }
+ 
+ .skills>div:first-child {
+  height: 35%;
+ }
+ .skill>span {
+   font-size: smaller;
+ }
 
  .tube{
    flex-direction: row;
    align-items: center;
      width: 100%;
-     height: 55%;
+     height: 30%;
  }
 .progressBox{
 display: none;
@@ -563,35 +588,28 @@ display: none;
 
 .box2{
  width:100%;
- height:69%;
+ height:60%;
+ justify-content: space-evenly;
 }
 
-.userSkills{
- height:35%;
- width:100%;
- flex-direction: column;
-}
+
 
 .badges{
  width: 100%;
- height: 48%;
+ height: 17%;
  font-size: smaller;
 }
-
-.skills {
- width: 100%;
- height: 48%;
- font-size: smaller;
+.lineGraph{
+  height: 20%;
 }
 
-.skills>div:first-child {
- height: 35%;
+.recent{
+  height: 55%;
 }
-.skill>span {
-  font-size: smaller;
-}
+
+
 .rechead h1 {
-  padding: 10px;
+  padding: 7px;
   font-size: medium;
 }
 
@@ -604,6 +622,7 @@ font-size: large;
 
 .toggle{
  width: 20%;
+ height: 60%;
 }
 }
 
