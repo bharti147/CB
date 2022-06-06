@@ -214,10 +214,10 @@ new Chart("myChart", {
     
     scales: {
 
-      yAxes: [{ticks: {min: 0, max:6, fontSize: 20, fontStyle: '700',fontColor: '#000',
+      yAxes: [{ticks: {min: 0, max:6, fontSize: 15, fontStyle: '700',fontColor: '#000',
      
     }}],
-      xAxes: [{ticks: {fontSize: 20, fontStyle: '700',fontColor: '#000'}}]
+      xAxes: [{ticks: {fontSize: 15, fontStyle: '700',fontColor: '#000'}}]
     }
   }
 });
