@@ -6,7 +6,7 @@
 body{
     overflow-y: scroll;
     font-family: 'Rubik', sans-serif;
-    background-image: url('/badges/background.svg');
+    background-image: url('background.svg');
     background-size: cover;
     
 
