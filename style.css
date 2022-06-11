@@ -7,7 +7,7 @@
 body{
     font-family: 'Rubik', sans-serif;
     overflow-y: scroll;
-     background-image: url('https://bharti147.github.io/CB/badges/background.svg');
+     background-image: url("badges/background.svg");
     background-repeat: no-repeat;
     background-size: cover;
     
