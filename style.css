@@ -5,9 +5,14 @@
   
 }
 body{
-    background-color: rgb(238, 240, 240);
     font-family: 'Rubik', sans-serif;
     overflow-y: scroll;
+     background-image: url('/badges/background.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    /* background-position: center; */
+  
 }
 body::-webkit-scrollbar {
   display: none;
@@ -20,9 +25,11 @@ body::-webkit-scrollbar {
     display: flex;
     justify-content: space-between;
     align-items:flex-start;
-    /* margin-top: 20px; */
-  
-  
+    overflow-y: scroll;
+    /* margin-top: 20px; */ 
+}
+.container::-webkit-scrollbar{
+  display: none;
 }
 .box1{
     display:flex;
@@ -34,38 +41,38 @@ body::-webkit-scrollbar {
    /* border: 2px solid red; */
 }
 .profile{
-   
+   padding: 10% 2% 8% 2%;
     border-radius: 10px;
     width:100%;
     height:22%;
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     box-shadow:0 0 8px 0px  rgb(178, 174, 174);
-  background-color: white;
+  background-color: transparent;
 }
 .p{
-  /* border:1px solid red; */
+
   width: 80%;
-  height: 30%;
+  height: 55%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between; 
 }
 
 
 .profile_pic{
-    width: 100px;
-    height: 100px;
+    width: 35%;
+    height: 100%;
     border-radius: 50%;
     border: 1px solid black;
     background-image: url("http://s3.amazonaws.com/37assets/svn/765-default-avatar.png");
     background-size: cover;
 }
 .profile_name{
-    width: 60%;
-    
+    width: 55%;
+
     height: 70%;
     font-size: 30px;
     display: flex;
@@ -73,11 +80,25 @@ body::-webkit-scrollbar {
     justify-content: space-between;
     /* border: 1px solid black; */
 }
+.profile button{
+  width: 99%;
+  height: 20%;
+  border-radius: 10px;
+  background-color: #f1c40f;
+  border: none;
+}
+.profile button a{
+ text-decoration: none;
+ color: white;
+ font-size:20px;
+ font-weight: 200;
+}
+
 
 .skills{
   width: 100%; 
   height: 26%;
-  background-color: white;
+  background-color: transparent;
   box-shadow:0 0 8px 0px  rgb(178, 174, 174);
   border-radius: 10px;
   display: flex;
@@ -90,7 +111,7 @@ body::-webkit-scrollbar {
   height: 20%;
   width: 100%;
   text-align: center;
-  background-color:#777777 ;
+  background-color:#f1c40f ;
   color: white;
   /* border: 2px solid brown; */
  /* padding: 1% 0%; */
@@ -120,7 +141,7 @@ height: 90%;
 }
 .skill>p{
 
-  background-color: rgb(235, 235, 235);
+  background-color: #FFF7E4;
   padding: 5px 15px;
   color: rgb(38,38,38);
   border-radius: 15px;
@@ -140,7 +161,7 @@ height: 90%;
     width:100%;
     height:45%;
     box-shadow:0 0 8px 0px  rgb(178, 174, 174);
-    background-color: white;
+    background-color: transparent;
 } 
 
 .progressBox{
@@ -150,13 +171,15 @@ height: 90%;
    display: flex;
    align-items: center;
    justify-content: center;
+   position: relative;
   
 }
 #circle {
+  background-color: rgb(85, 187, 241);
 position: absolute;
 border-radius: 50%;
-height: 128px;
-width: 128px;
+height: 69%;
+width: 33%;
 background-color: rgb(255, 255, 255);
 color: rgb(22, 20, 20);
 display: flex;
@@ -372,7 +395,7 @@ overflow: hidden;
 
 
 .recent{
-    background-color: white;
+    background-color: transparent;
     border-radius: 10px;
     overflow: hidden;
     height: 55%;
@@ -392,14 +415,14 @@ overflow: hidden;
   height: 10%;
   width: 100%;
   padding: 0% 4%;
-  background-color:white;  
+  background-color:transparent;  
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 1%  0 0.5% 0;
 }
 .rechead h1{
-  background-color: #777777;
+  background-color: #f1c40f;
   padding: 15px;
   font-size: 22px;
   border: none;
@@ -422,7 +445,7 @@ overflow: hidden;
 .ques{
   height:8%;
   width: 90%;
-  background-color: rgb(235,235,235);  
+  background-color: transparent;  
   border-radius: 8px;
  color: rgb(38,38,38);
  font-size: larger;
@@ -430,6 +453,7 @@ overflow: hidden;
  display: flex;
  align-items: center;
  padding-left: 3%;
+ border: 1px solid black;
 }
 
 
@@ -466,10 +490,37 @@ color: white;
      justify-content: space-evenly;
    }
   
-  .profile{
-    width: 100%;
-      height: 28%;
-  }
+ .profile{
+   padding: 2%;
+    width:100%;
+    height:28%;
+    justify-content: space-evenly;
+}
+.profile_pic{
+  width: 18%;
+  height: 100%;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-size: contain;
+  background-position:center ;
+  background-repeat: no-repeat;
+}
+.p{
+ align-items: center;
+ justify-content: space-between;
+   /* border:1px solid red; */
+   width: 90%;
+  
+
+}
+.profile_name{
+  width: 30%;
+  height: 40%;
+  align-items:center;
+  justify-content: center;
+  margin-right: 32%;
+  /* border: 1px solid black; */
+}
   .skills {
     width: 100%;
     height: 32%;
@@ -556,6 +607,13 @@ color: white;
   }
  .p{
   width: 90%;
+}
+.profile_pic{
+  width: 25%;
+  height: 100%;
+  background-size: contain;
+  background-position:center ;
+  background-repeat: no-repeat;
 }
 .skills {
   width: 100%;
