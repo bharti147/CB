@@ -203,8 +203,8 @@ new Chart("myChart", {
     datasets: [{
       fill: true,
       lineTension: 0,
-      backgroundColor: "rgb(173, 178, 221)",
-      borderColor: "rgb(173, 178, 221)",
+      backgroundColor: "rgb(85, 187, 241)",
+      borderColor: "rgb(85, 187, 241)",
       data: yValues
     
     }]
@@ -214,10 +214,10 @@ new Chart("myChart", {
     
     scales: {
 
-      yAxes: [{ticks: {min: 0, max:6, fontSize: 15, fontStyle: '700',fontColor: '#000',
+      yAxes: [{ticks: {min: 0, max:6, fontSize: 16, fontStyle: '700',fontColor: '#000',
      
     }}],
-      xAxes: [{ticks: {fontSize: 15, fontStyle: '700',fontColor: '#000'}}]
+      xAxes: [{ticks: {fontSize: 16, fontStyle: '700',fontColor: '#000'}}]
     }
   }
 });
